@@ -37,4 +37,4 @@ sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
-#now our data is ready to modeling phase
+#now our data is ready for modeling phase

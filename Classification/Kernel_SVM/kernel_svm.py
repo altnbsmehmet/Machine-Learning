@@ -54,7 +54,7 @@ plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
 
-#visualising the test set results
+#visualizing the test set results
 from matplotlib.colors import ListedColormap
 X_set, y_set = sc.inverse_transform(X_test), y_test
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 10, stop = X_set[:, 0].max() + 10, step = 1),

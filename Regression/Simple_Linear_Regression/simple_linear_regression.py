@@ -35,3 +35,7 @@ plt.title('Salary vs Experience (Test Set)')
 plt.xlabel('Years of Experience')
 plt.ylabel('Salary')
 plt.show()
+
+#evaluating the model with r-squared value
+from sklearn.metrics import r2_score
+print(f"R-Squared value: {r2_score(y_test, y_pred)}")

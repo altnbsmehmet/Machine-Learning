@@ -44,3 +44,7 @@ print(f"Single prediction depending on State = California,R&D Spend = 160000, Ad
 #final regression equation with the final values of the coefficient
 print(f"Coefficients: {regressor.coef_} \n")
 print(f"Intercept: {regressor.intercept_} \n")
+
+#evaluating the model with r-squared value
+from sklearn.metrics import r2_score
+print(f"R-Squared value: {r2_score(y_test, y_pred)}")
